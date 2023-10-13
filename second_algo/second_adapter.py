@@ -5,7 +5,7 @@ from adapter_base import AdapterBase
 from second_algo.detect_lines import Detector
 
 
-class FirstAdapter(AdapterBase):
+class SecondAdapter(AdapterBase):
     def __init__(self, important_param):
         self.important_param = important_param
 
@@ -31,6 +31,6 @@ if __name__ == "__main__":
         ],
         dtype=np.uint8,
     )
-    adapter = FirstAdapter(42)
+    adapter = SecondAdapter(42)
     result = adapter.detect(image)
     print(result)
